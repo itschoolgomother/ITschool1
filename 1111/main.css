@@ -1,0 +1,14 @@
+body{
+     background-color: pink;
+}
+p{
+	color: pink;
+    font-size: 35px;
+    text-align: center;
+}
+.snowman{
+    width: 200px;
+    height: 500px;
+    background-color: lightblue;
+}
+    
