@@ -1,0 +1,5 @@
+alert("3+2=5")
+console.log("hello")
+console.log("How are you?")
+console.log("I'm okay. How are you?")
+console.log("I,m fine.")

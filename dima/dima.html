@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<textarea id="text"></textarea>
+<button onclick="get()">press</button>
+<script type="text/javascript">
+	var  x = Math.random()*100;
+x=Math.round(x)
+for(var i = 0;i<10;i++){
+	var h = prompt("казыно")
+		if(x==h){alert("Вы виграли")}
+		if(x>h){alert("Данное число больше")}
+if(x<h){alert("Данное число меньше")}
+	break;
+}
+function get(){
+   	var text = document.getElementById('text').value;
+   	alert(text)
+   }
+
+</script>
+</body>
+</html>
