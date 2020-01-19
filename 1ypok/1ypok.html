@@ -4,33 +4,20 @@
 	<title></title>
 </head>
 <body>
+	<textarea id="text"></textarea>
+	<button onclick="get()">попробовать</button>
 <script type="text/javascript">
-	var a = prompt("введите первое число");
-	var b = prompt("введите второе число");
-	var c ;
-alert("a = "+a)
-alert("b = "+b)
-var s = confirm("множим?");
-if (s==true) {c=a*b}
-else {d=confirm("делим?")}
-if (d==true) {c=a/b}
-
- alert("c="+c)
-
-
-var h = confirm("сумируем?");
-if (h==true) {c=a+b}
-	else {n=confirm("отнимаем?")}
- alert("c="+c)
-if (n==true) {c=a-b}
-	else {c=a-b}
- alert("c="+c)
-</script>
-</body>
-</html>
-</script>
-</body>
-</html>
+	var r = Math.random()*100;
+	var p = 0;
+r = Math.round(r)
+function get(){
+p+=1;
+var value = document.getElementById('text').value;
+if(value == r){alert('поздравляю, вы выиграли.')}
+else if(value > r){alert('меньше.')}
+else if(value < r){alert('больше.')}
+if (p == 10){alert('пока,пока.')}
+}
 </script>
 </body>
 </html>
