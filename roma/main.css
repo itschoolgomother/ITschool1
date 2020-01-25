@@ -1,161 +1,23 @@
- body{
-     background-image: url("snow.gif");
-     background-size: 100%;
- }
- p{
-     color: lightcoral;
-     font-size: 45px;
-     text-align: center;
-     animation: 5s fon infinite;
- }
-
-@keyframes fon{
-    0%{color: white;}
-    25%{color: teal;}
-    50%{color: tomato;}
-    75%{color: peru;}
-    100%{color: rosybrown;}
+body{
+	background-color: silver;
 }
-
- .snowman{
-     width: 200px;
-     height: 500px;
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%,-50%);   
- }
-.legs{
-     width: 200px;
-     height: 200px;
-     background-color: lightgrey; 
-     border-radius: 50%;
-     position: absolute;
-     top: 300px;
+.box{
+	width: 300px;
+	height: 300px;
+	background-color: orange;
 }
-.body{
-    width: 150px;
-    height: 150px;
-    background-color: lightgrey;
-    border-radius: 50%;
-    position: absolute;
-    top: 150px;
-    left: 25px;
+.circle1{
+	width: 100px;
+	height: 100px;
+	background-color: gold;
+	border-radius: 0% 50% 50% 50%;
 }
-.haed{
-    width: 100px;
-    height: 100px;
-    background-color: lightgrey; 
-    border-radius: 50%;
-    position: absolute;
-    left: 50px;
-    top: 50px;
-}
-.eyel{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    left: 20px;
-    top: 40px;
-}
-.eyer{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    left: 70px;
-    top: 40px;
-}
-.smile{
-    width: 25px;
-    height: 10px;
-    background-color: tomato;
-    border-radius: 0 0 50% 50% / 0 0 100% 100%;
-    position: absolute;
-    top: 67px;
-    left:36px;
-}
-.arml{
-    width: 100px;
-    height: 10px;
-    background-color: brown;
-    position: absolute;
-    left: -90px;
-    top: 55px;
-    transform: rotate(-15deg);
-    z-index: -1;
-}
-.armr{
-    width: 100px;
-    height: 10px;
-    background-color: brown;
-    position: absolute;
-    left: 140px;
-    top: 55px;
-    transform: rotate(15deg);
-    z-index: -1;
-}
-.legl{
-    width: 60px;
-    height: 40px;
-    background-color: lightgrey;
-    border-radius: 50%;
-    position: absolute;
-    top: 170px;
-}
-.legr{
-    width: 60px;
-    height: 40px;
-    background-color: lightgrey;
-    border-radius: 50%;
-    position: absolute;
-    top: 170px;
-    left: 135px;
-}
-.dot1{
-	width:10px;
-	height:10px;
-	background-color:black;
-	border-radius:50%;
+.circle2{
+	width: 50px;
+	height: 50px;
+	background-color: green;
+	border-radius: 0% 50% 50% 50%;
 	position: absolute;
-	left:70px;
-	top:50px;
-	animation: 1s pygovica infinite;
-
-}
-.dot2{
-	width:10px;
-	height:10px;
-	background-color:black;
-	border-radius:50%;
-	position: absolute;
-	left:70px;
-	top:110px;
-	animation: 1s pygovica infinite;
-
-}
-.dot3{
-	width:10px;
-	height:10px;
-	background-color:black;
-	border-radius:50%;
-	position: absolute;
-	left:95px;
-	top:30px;
-	animation: 1s pygovica infinite;
-
-}
-@keyframes pygovica {
-	0%{background-color: green; height:10px;}
-	10%{background-color:purple;}
-	25%{background-color: red;}
-	50%{background-color: yellow;height: 8px;}
-	60%{background-color:white; top:10px;}
-	75%{background-color: blue;}
-	85%{background-color: orange;}
-	100%{background-color: pink; width: 4px;}
-
+	left: 25px;
+	top: 375px;
 }
