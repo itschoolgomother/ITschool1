@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<textarea id="tt"></textarea>
+<button onclick="to()">balance</button>
+<button onclick="red()">red</button>
+<button onclick="black()">black</button>
+<script type="text/javascript">
+	var money = 1000;
+    function red(){
+    var ch = 0;
+    var k = document.getElementById('tt').value;
+    money = money - k;
+    var r = Math.random
+    }
+    function black(){
+    var ch = 1;
+    var k = document.getElementById('tt').value;
+    money = money - k;
+    }
+	function to(){
+		alert("У вас: "+money+"$")
+	} 
+</script>
+</body>
+</html>

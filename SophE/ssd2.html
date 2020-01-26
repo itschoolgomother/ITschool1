@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<textarea id="tt"></textarea>
+	<button onclick="red()">red</button>
+	<button onclick="black()">black</button>
+	<button onclick="balance()">баланс</button>
+	<script type="text/javascript">
+		var m = 1000;
+		function red(){
+			var text = document.getElementById('tt').value;
+			if(text<m){
+			r=Math.random()
+			m=m-text;
+			r=Math.round(r)
+			if(r==0){
+			m=m+text*2;alert('Вы победили!');balance();}
+				else{
+			alert('Вы проиграли.');balance();
+				}
+			}
+				else{alert('У вас нету столько денег!')}
+		}
+		function balance(){
+			alert('У вас'+m+"$");
+		}
+		function black(){
+			var text = document.getElementById('tt').value;
+			if(text<m){
+			r=Math.random()
+			m=m-text;
+			r=Math.round(r)
+			if(r==0){
+			m=m+text*2;alert('Вы победили!');balance();}
+				else{
+			alert('Вы проиграли.');balance();
+				}
+			}
+				else{alert('У вас нету столько денег!')}
+			}
+		
+	</script>
+</body>
+</html>

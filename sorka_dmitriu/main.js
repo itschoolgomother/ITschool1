@@ -1,31 +1,32 @@
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext("2d");
-var ran = Math.round(Math.random() * 12)
+var ran = Math.round(Math.random() * 12);
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 canvas.style.backgroundColor = "blue";
 function triangle(x1,y1,x2,y2,x3,y3) {
-ctx.beginPath()
-ctx.moveTo(x1,y1)
-ctx.lineTo(x2,y2)
-ctx.lineTo(x3,y3)
-ctx.lineTo(x1,y1)
+ctx.beginPath();
+ctx.moveTo(x1,y1);
+ctx.lineTo(x2,y2);
+ctx.lineTo(x3,y3);
+ctx.lineTo(x1,y1);
 ctx.fill();
-ctx.closePath()
+ctx.closePath();
 }
 var a87 = innerWidth/2;
 var s87 = innerHeight/2;
 function equalside(x,y,size) {
-ctx.lineWidth=10	
-ctx.beginPath()
-ctx.moveTo(x-size/2,y+size/2)
-ctx.lineTo((x-size/2)+size,y+size/2)
-ctx.lineTo(x,(y+size/2)-size)
-ctx.lineTo(x-size/2,y+size/2)
+ctx.lineWidth=10;	
+ctx.beginPath();
+ctx.fillStyle = "red";
+ctx.moveTo(x-size/2,y+size/2);
+ctx.lineTo((x-size/2)+size,y+size/2);
+ctx.lineTo(x,(y+size/2)-size);
+ctx.lineTo(x-size/2,y+size/2);
 ctx.fill();
-ctx.closePath()
+ctx.closePath();
 }
-equalside(a,s,500);
+equalside(a87,s87,500);
 //triangle(300,300,400,100,500,300);
 /*ctx.beginPath()
 ctx.moveTo(300,300)

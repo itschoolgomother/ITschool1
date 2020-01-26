@@ -1,6 +1,3 @@
-alert("Oksdxf" + name)
-var box = document.getElementById("box");
-
-box.style.width="100px"
-box.style.height="100px"
-box.style.backgroundColor ="red"
+var x =prompt("utc","7");
+var utc = 31.93
+alert(x*utc+"uans		")
