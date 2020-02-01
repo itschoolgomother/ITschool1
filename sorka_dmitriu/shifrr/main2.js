@@ -1,18 +1,27 @@
-function sciper (txt) {
+function sciper (txt,descifration=false) {
 	var text = txt.split("");
 	var rrr = [];
-	for (var i = 0; i < text.length; i++) {
+	if(descifration){
+		for (var i = 0; i < text.length; i++) {
 		//alert(txt.charCodeAt(i)-96);
 
-		var eee = text[i].charCodeAt(0)+7;
+		var eee = text[i].charCodeAt(0)-3;
 		rrr.push(String.fromCharCode(eee));
+	}
+	}else{
+			for (var i = 0; i < text.length; i++) {
+		//alert(txt.charCodeAt(i)-96);
+
+		var eee = text[i].charCodeAt(0)+3;
+		rrr.push(String.fromCharCode(eee));
+	}
+	
 	}
 	console.log(rrr); 
 
 }
-sciper("x:2987,y:1538");
-
-
+sciper("abcdefg");
+sciper("defghig",true)
 
 
 

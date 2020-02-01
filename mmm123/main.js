@@ -1,22 +1,23 @@
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+var box = document.getElementById("box");
 
-canvas.width = innerWidth;
-canvas.height = innerHeight;
-canvas.style.backgroundColor = "green"
 
-var cx = innerWidth/2;
-var cy = innerHeight/2;
+box.style.height ="100px"
+box.style.backgroundColor = "red"
 
-function sircle(r,line){
-	ctx.beginPath();
-	ctx.lineWidth = line;
-	ctx.lineWidth = 5; 
-	ctx.strokeStyle = "black";
-	ctx.arc(cx,cy,r,0,Math.PI*2);
-	ctx.stroke();
+window.addEventListener('scroll', function(e) {
+	box.style.top = pageYOffset+"px";
+	box.style.width=pageYOffset/2+"px";
+
+	console.log(pageYOffset)
+
+if(1000<pageYOffset){
+	box.style.backgroundColor = "red"
+}else if(2000>pageYOffset){
+	box.style.backgroundColor = "green"
+}else if (3000>pageYOffset) {
+	box.style.backgroundColor = "blue"
 }
 
-for(var i = 50;i< 500; i+=25){
-   sircle(i,i/50)
-}
+});
+
+

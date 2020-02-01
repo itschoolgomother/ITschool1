@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="dima"></canvas>
+<script type="text/javascript">
+	var canvas=document.getElementById('dima');
+	var ctx = canvas.getContext('2d');
+	canvas.width = 300;
+	canvas.haight = 300;
+	var x = 30;
+	for (var i = 0; i < 10; i++) {
+		texts()
+	
+	function texts () {
+	ctx.clearRect(10,10,10,10);
+	ctx.beginPath()
+	ctx.rect(x,70,50,30);
+	ctx.fullStyle='gray';
+	ctx.fill()
+	ctx.rect(x,110,70,30)
+		ctx.fullStyle='gray';
+	ctx.fill()
+	ctx.arc(x,150,70,30,7)
+		ctx.fillStyle='gray';
+	ctx.fill()
+	ctx.arc(100,200,150,40,7)
+	ctx.fill()
+	ctx.arc(150,250,60,20,7)
+	ctx.fill()
+	x=x+10
+	}
+    }
+    setInterval(texts,100)
+</script>
+</body>
+</html>
