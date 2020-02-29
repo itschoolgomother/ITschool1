@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: 2000px;">
+<script type="text/javascript">
+	window.addEventListener('scroll',img);
+
+function img() {
+	var xi = -500+pageYOffset*3.3;
+if (xi>600) {xi=600;}
+document.getElementById('img').style.left=xi+"px"
+}
+</script>
+<style type="text/css">
+	#img {position: fixed;
+	top: 200px;}
+  #teext{width: 500px ;position: absolute;top: 1000px ;  }
+   #teext2{width: 500px ;position: absolute;top: 1111px ;  }
+   #teext3 {position: fixed;
+	top: 500px;}
+</style>
+<div id="img"><center>
+</center>
+<img width="150px;" src="15.png">
+<img width="150px;" src="15.png">
+<img width="150px;" src="15.png">
+</center>
+</div>
+
+<div id="teext">
+Союз нерушимый республик свободных
+Сплотила навеки Великая Русь.
+Да здравствует созданный волей народов
+Единый, могучий Советский Союз!
+Славься, Отечество наше свободное,
+Дружбы, народов надежный оплот!
+Знамя советское, знамя народное
+Пусть от победы, к победе ведет!
+</div>
+
+<div id="teext2">
+	Сквозь грозы сияло нам солнце свободы,
+И Ленин великий нам путь озарил.
+Нас вырастил Сталин - на верность народу
+На труд и на подвиги нас вдохновил.
+Славься, Отечество наше свободное,
+Счастья народов надежный оплот!
+Знамя советское, знамя народное
+Пусть от победы к победе ведет!
+</div>
+<script type="text/javascript">
+	window.addEventListener('scroll',img);
+
+function img() {
+	var l = -900+pageYOffset*3.3;
+if (l>600) {l=600;}
+document.getElementById('teext3').style.left=l+"px"
+}
+</script>
+<div id="teext3">
+	гимн советского союза
+
+</div>	
+</body>
+</html>

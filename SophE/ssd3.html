@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ssd3</title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+		canvas.width = 1000;
+		canvas.height = 700;
+		var po=0;
+				var x = 50;
+				var y = 50;
+			for (var i = 0; i < 25; i++) {
+				k()
+				function k(){
+					ctx.beginPath()
+					ctx.rect(x,y,50,50)
+					ctx.fill()
+					x+=75;
+			if(x>400){x=50; y+=75;}
+			}}
+
+			function h(){
+				po++;
+				x=50;
+				y=50;
+				if(po==2){
+					y=125;
+					for(var r = 0; r < 5; r++){
+					ctx.beginPath()
+					ctx.rect(x,y,50,50)
+					ctx.fillStyle = "red";
+					ctx.fill()
+					x+=75;}}
+				if(po==3){
+					y=200;
+					for(var r = 0; r < 5; r++){
+					ctx.beginPath()
+					ctx.rect(x,y,50,50)
+					ctx.fillStyle = "orange";
+					ctx.fill()
+					x+=75;}}
+				if(po==1){
+					y=50;
+					for(var r = 0; r < 5; r++) {
+					ctx.fillStyle = "brown";
+					ctx.beginPath()
+					ctx.rect(x,y,50,50)
+					ctx.fill()
+					x+=75;}}
+				}
+	</script>
+<button onclick="h()">ачвимп</button>
+</body>
+</html>

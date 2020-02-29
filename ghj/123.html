@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<button onclick="dell()">Играть в игру дурак</button>
+<script type="text/javascript">
+	var canvas = document.getElementById('canvas');
+	var ctx = canvas.getContext('2d');
+	canvas.width = 1200;
+	canvas.height = 600;
+	var x = 50;
+	var y = 50;
+	for (var i = 0;i<25;i++) {
+	dell()
+	function dell() {
+		ctx.beginPath()
+		ctx.rect(x,y,50,50);
+		x+=75;
+		if(x>350){
+			x=50;
+			y+=75;
+		}
+		ctx.fill()
+	}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		
+		.text{
+			position: absolute;
+			font-size: 100px;
+		}
+
+		#H{
+			top: 200px;
+			left: 100px;
+			
+
+		}
+		#E{
+			top: 200px;
+			left: 200px;
+			
+
+		}
+		#L1{
+			top: 200px;
+			left: 300px;
+			
+
+		}
+		#L2{
+			top: 200px;
+			left: 400px;
+			
+
+		}
+		#O1{
+			top: 200px;
+			left: 500px;
+			
+
+		}
+		#W2{
+			top: 200px;
+			left: 600px;
+			
+
+		}
+		#W1{
+			top: 200px;
+			left: 800px;
+			
+
+		}
+		#O2{
+			top: 200px;
+			left: 900px;
+			
+
+		}
+		#R{
+			top: 200px;
+			left: 1000px;
+			
+
+		}
+		#L3{
+			top: 200px;
+			left: 1100px;
+			
+
+		}
+		#D{
+			top: 200px;
+			left: 1200px;
+			
+
+		}
+		body{visibility: hidden;}
+		
+
+		
+	</style>
+<div class="text" id="H">H</div>
+<div class="text" id="E">E</div>
+<div class="text" id="L1">L</div>
+<div class="text" id="L2">L</div>
+<div class="text" id="O1">O</div>
+<div class="text" id="W1">W</div>
+<div class="text" id="O2">O</div>
+<div class="text" id="R">R</div>
+<div class="text" id="L3">L</div>
+<div class="text" id="D">D</div>
+	<script type="text/javascript">
+
+     window.addEventListener('keydown',s);
+     function s(){
+if (event.code=="KeyH") {document.getElementById('H').style.visibility='visible'};
+if (event.code=="KeyE") {document.getElementById('E').style.visibility='visible'};
+if (event.code=="KeyL") {document.getElementById('L3').style.visibility='visible';
+document.getElementById('L1').style.visibility='visible';
+document.getElementById('L2').style.visibility='visible';
+}
+if (event.code=="KeyO") {document.getElementById('O2').style.visibility='visible';
+document.getElementById('O1').style.visibility='visible'}
+if (event.code=="KeyW") {document.getElementById('W1').style.visibility='visible'};
+if (event.code=="KeyR") {document.getElementById('R').style.visibility='visible'};
+if (event.code=="KeyD") {document.getElementById('D').style.visibility='visible'};
+     }
+	</script>
+</body>
+</html>

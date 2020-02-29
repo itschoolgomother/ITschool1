@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="text">
+	<center>
+		 фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки фигушки.
+	</center>
+</div>
+<style type="text/css">
+	#text{
+		width: 300px;
+		position: fixed;
+		top: 400px;
+	}
+	body{height: 2000px;}
+</style>
+<script type="text/javascript">
+	window.addEventListener('scroll',reno);
+	function reno(){
+		var x = -500+pageYOffset;
+		if(x>100){x=100}
+			document.getElementById('text').style.left = x+'px'
+	}
+	window.addEventListener('scroll',reeeno);
+	function reeeno(){
+		var t = -270+pageYOffset;
+		if(t>200){t=300}
+			document.getElementById('text').style.left = t+'px'
+	}
+</script>
+</body>
+</html>

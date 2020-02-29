@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="cort"> <button id="but">  </button> <button id="bus1">   </button></div>
+<style type="text/css">
+#cort{
+	height: 100px;
+	width: 10000px;
+	background-color: gray;
+	position: fixed;
+	top: 0px;
+    animation: ani 2s 1;
+
+}
+@keyframes ani{
+	from{top: -200px;}
+	to{top: 0px;}
+
+}
+#but{
+	height: 80px;
+	width: 300px;
+	background-color: gray;
+	margin right: 400px;
+	opacity: 0.1;
+	margin: 15px;
+	margin right: 30px;
+	margin left: 25px;
+	animation: 'ani';
+}
+#bus1{
+	height: 80px;
+	width: 300px;
+	background-color: gray;
+	margin right: 400px;
+	opacity: 0.1;
+	margin:15px; 
+	margin left: 0px;
+    animation: 'ani';
+}
+</style>
+<script type="text/javascript">
+	document.addEventListener('contextmenu',meny);
+	var k =1;
+	function meny(){
+		if(k>0){
+			document.getElementById('cort').style.animation= 'ani 2s 1';
+		}
+		else{
+			document.getElementById('cort').style.animation= 'ani 2s 1';
+		}
+		k=-k
+	}
+
+</script>
+</body>
+</html> 

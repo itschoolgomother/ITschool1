@@ -1,0 +1,38 @@
+/*all style*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.con{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	min-height: 150px;
+	background-color: lightgrey;
+}
+header > div{
+	display: flex;
+}
+.headerL,.headerR{
+	width: 100%;
+	min-height: 150px;
+	display: flex;
+	align-items: center;
+}
+menu > li{
+	list-style: none;
+	display: inline;
+	margin-left: 50px;
+	font-size: 20px;
+	color: brown;
+}
+
+/* Main */
+.content{
+	width: 100%;
+	min-height: 500px;
+	background-color: lightgrey;
+	margin-top: 50px;
+}

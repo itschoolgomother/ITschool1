@@ -1,4 +1,4 @@
-var si
+
 
 // var test = prompt("Вопрос","123");
 //  var usd = 24;
@@ -6,7 +6,27 @@ var si
 
 // alert(Math.round(test/usd)+" usd");
 // alert(Math.round(test/cfh)+)
-var box = document.getElementById('box');
-box.style.width = "100px.";
-box.style.height = "100px.";
-box.style.backgroundColor = blue;
+
+setInterval(function() {
+var red = Math.random() * 255
+var green = Math.random() * 255
+var blue = Math.random() * 255
+document.body.style.backgroundColor = "rgb("+red+","+green+","+blue+")"
+
+box.style
+}, 3000);
+
+
+var box = document.getElementById("box")
+box.style.width = "100px"
+box.style.heigh = "100px"
+box.style.backgroundColor = "random"
+
+
+
+
+
+
+
+
+
